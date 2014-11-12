@@ -1,12 +1,1 @@
 <inbox></inbox>
-<div ng-controller="InboxCtrl as inbox">
-    {{inbox.title}}
-    <ul>
-        <li ng-repeat="email in inbox.emails">
-            <div>
-                <em>From: {{email.author}}</em>
-                <p>{{email.message}}</p>
-            </div>
-        </li>
-    </ul>
-</div>

@@ -2,7 +2,7 @@
 
 var emailAppControllers = angular.module('emailAppControllers', []);
 
-emailAppControllers.controller('InboxCtrl', function(InboxService) {
+emailAppControllers.controller('InboxCtrl', function InboxCtrl(InboxService) {
     var vm = this;
     InboxService.getMessages()
         .success(function(jsonData, statusCode) {
