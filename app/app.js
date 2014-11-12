@@ -1,12 +1,27 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+var emailApp = angular.module('emailApp', [
+    'emailAppControllers',
+    'emailAppServices',
+    'emailAppDirectives',
+    'ngRoute',
+    'emailApp.version'
+]);
+
+emailApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider
+      .when('/inbox', {
+        templateUrl: 'views/inbox.html',
+        controller: 'InboxCtrl',
+        controllerAs: 'inbox'
+      })
+      .when('/inbox/email/:id', {
+        templateUrl: 'views/email.html',
+        controller: 'EmailCtrl',
+        controllerAs: 'email'
+      })
+      .otherwise({
+        redirectTo: '/inbox'
+      });
 }]);

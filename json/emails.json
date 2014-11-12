@@ -1,0 +1,20 @@
+[
+  {
+    "id": 123941,
+    "from": "Bob Smith",
+    "subject": "What's up?",
+    "message": "Hello world!"
+  },
+  {
+    "id": 519954,
+    "from": "Susanne Johnson",
+    "subject": "What is going on",
+    "message": "I'm trapped in a AngularJS app!"
+  },
+  {
+    "id": 519954,
+    "from": "Madeline Dorvard",
+    "subject": "Easter has arrived",
+    "message": "Buy more chicken eggs"
+  }
+]
