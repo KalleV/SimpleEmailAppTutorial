@@ -1,20 +1,23 @@
 [
   {
     "id": 123941,
+    "date": 1204949210,
     "from": "Bob Smith",
     "subject": "What's up?",
-    "message": "Hello world!"
+    "content": "Hello world!"
   },
   {
     "id": 519954,
+    "date": 11111921409214,
     "from": "Susanne Johnson",
     "subject": "What is going on",
-    "message": "I'm trapped in a AngularJS app!"
+    "content": "I'm trapped in a AngularJS app!"
   },
   {
-    "id": 519954,
+    "id": 515171,
+    "date": 11195019349,
     "from": "Madeline Dorvard",
     "subject": "Easter has arrived",
-    "message": "Buy more chicken eggs"
+    "content": "Buy more chicken eggs"
   }
 ]

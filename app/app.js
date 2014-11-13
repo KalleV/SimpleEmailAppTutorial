@@ -2,10 +2,11 @@
 
 // Declare app level module which depends on views, and components
 var emailApp = angular.module('emailApp', [
+    'ngRoute',
+    'ngSanitize',
     'emailAppControllers',
     'emailAppServices',
     'emailAppDirectives',
-    'ngRoute',
     'emailApp.version'
 ]);
 
